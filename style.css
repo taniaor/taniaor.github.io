@@ -27,8 +27,14 @@
 .image-container{
   justify-content: center;
   background-color: #B9FBE4;
+  border-radius: 10%;
 }
 
 .overall{
   background-color: #B9FBE4;
+}
+
+.sec-bio{
+  background-color: #B9FBE4;
+  font-size: 15px;
 }

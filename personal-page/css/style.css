@@ -27,9 +27,20 @@ h5 {
 
 .first-section {
   background-color: #F9F9F9;
-  margin-top: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 body {
   background-color: #F9F9F9;
+}
+
+.second-section{
+  background-color: #F0F8FF;
+  background-image: url("../img/project-header.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  height: 425px;
 }

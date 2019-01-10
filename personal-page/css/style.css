@@ -1,0 +1,35 @@
+header{
+  background-color: #F0F8FF;
+  padding: 200px 0px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/flowers.JPG");
+}
+
+.nav-item {
+  margin: 10px 16px;
+}
+
+h1 {
+  color: white;
+}
+
+h5 {
+  color: white;
+}
+
+.first-section img {
+  height: 220px;
+  width: 220px;
+  border-radius: 50%;
+}
+
+.first-section {
+  background-color: #F9F9F9;
+  margin-top: 40px;
+}
+
+body {
+  background-color: #F9F9F9;
+}

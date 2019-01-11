@@ -41,6 +41,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  color: white;
+  color: black;
   height: 425px;
+}
+
+.third-section{
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.card {
+  margin-left: 35px;
+  margin-right: 35px;
 }

@@ -20,8 +20,8 @@ h5 {
 }
 
 .first-section img {
-  height: 220px;
-  width: 220px;
+  height: 270px;
+  width: 270px;
   border-radius: 50%;
 }
 
@@ -41,7 +41,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  color: black;
   height: 425px;
 }
 
@@ -51,10 +50,11 @@ body {
 }
 
 .card {
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .fourth-section {
   margin-top: 30px;
+  background-color: #F9F9F9;
 }

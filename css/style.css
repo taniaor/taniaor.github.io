@@ -35,7 +35,7 @@ body {
   background-repeat: no-repeat;
   width:100%;
   height: 100px;
-  background-image: url("../img/san_francisco.JPG");
+  background-image: url("img/san_francisco.JPG");
 }
 
 .first-section img {
@@ -272,3 +272,4 @@ div.altEV.right::after {
   color: white;
   text-align: center;
 }
+SHA256:Om1yXQLJ8ISeABszPJ7IB6Dew/wAdiOBJf4WzRh+S2Y

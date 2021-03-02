@@ -1,60 +1,274 @@
-header{
-  background-color: #F0F8FF;
-  padding: 200px 0px;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("../img/flowers.JPG");
+.navbar {
+    background-color: #0B132B;
+}
+
+.navbar-brand {
+  color: #EDE9ED;
 }
 
 .nav-item {
   margin: 10px 16px;
 }
 
-h1 {
-  color: white;
+.nav-link {
+  color: #EDE9ED;
 }
 
-h5 {
-  color: white;
+.custom-toggler.navbar-toggler {
+    border-color: #EDE9ED;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(237, 233, 237, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+body {
+  background-color: #3A506B;
+  padding:0;
+  margin:0;
+}
+
+#header-background{
+  padding: 270px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height: 100px;
+  background-image: url("../img/san_francisco.JPG");
 }
 
 .first-section img {
-  height: 270px;
-  width: 270px;
+  border: 10px solid #0B132B;
+  height: 250px;
+  width: 250px;
   border-radius: 50%;
 }
 
+#centeredPhoto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .first-section {
-  background-color: #F9F9F9;
+  color: #EDE9ED;
+  background-color: #3A506B;
   margin-top: 80px;
   margin-bottom: 80px;
 }
 
-body {
-  background-color: #F9F9F9;
+h1 {
+  font-family: Verdana;
+  color: #EDE9ED;
+  text-align: center;
+}
+
+h4 {
+  font-family: Verdana;
+  text-align: center;
+}
+
+h2 {
+  font-family: Verdana;
 }
 
 .second-section{
-  background-color: #F0F8FF;
-  background-image: url("../img/project-header.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 425px;
+  background-color: #0B132B;
+  color: #EDE9ED;
 }
 
 .third-section{
   margin-top: 40px;
   margin-bottom: 80px;
+  background-color: #3A506B;
+}
+
+.container-test {
+  position: relative;
+  width:200px;
+  height:200px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container-test:hover .overlay {
+  opacity: 1;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container-photo:hover .overlay {
+  opacity: 1;
+}
+
+.footer {
+  background-color: #0B132B;
+  font: Verdana;
+  color: #3A506B;
+  text-align: center;
+  margin: 50px 0 0 0; /* or just use:  margin-top: 50px;*/
+}
+
+/* (A) "SET" THE TIMELINE CONTAINER */
+.altTL, div.altEV {
+  box-sizing: border-box;
+  height: 200px;
+}
+
+.altTL {
+  /* (A1) RELATIVE POSITION IS NECESSARY... */
+  position: relative;
+  /* (A2) WIDTH RESTRICTION & CENTER ON PAGE */
+  width: 900px;
+  height: 650px;
+  margin: 0 auto;
+}
+
+/*Bar*/
+/* (B) USE ::BEFORE TO DRAW VERTICAL TIMELINE */
+.altTL::before {
+  /* (B1) DRAW THE VERTICAL TIMELIME */
+  content: '';
+  width: 5px;
+  background-color: #1da1ff;
+  /* (B2) SET IN MIDDLE OF CONTAINER */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+/*Specific Event on left*/
+/* (C) STYLES FOR EVENTS */
+div.altEV {
+  position: relative;
+  left: 0; /* DEFAULT TO LEFT, USE .RIGHT BELOW TO PLACE EVENT ON THE RIGHT */
+  padding: 10px 15px;
+  width: 45%;
+  background-color: #EDE9ED;
+  border-radius: 6px;
+  margin-bottom: 10px;
+
+}
+/*Events on the right*/
+div.right {
+  left: 55%;
+}
+
+/* (D) STYLES FOR THE DATE & TEXT */
+strong.edate {
+  font-weight: bold;
+  color: #0B132B;
+}
+
+p.etxt {
+  margin: 10px 0 0 0;
+  color: #3A506B;
+}
+
+/* (E) ADD "SPEECH BUBBLE TRIANGLE" TO THE EVENTS */
+div.altEV::before {
+  content: '';
+  color: #3A506B;
+  border: 10px solid transparent;
+  border-left-color: #EDE9ED;
+  border-right: 0;
+  position: absolute;
+  left: 100%;
+  top: 17%;
+}
+
+div.altEV.right::before {
+  content: '';
+  border: 10px solid transparent;
+  border-right-color: #EDE9ED;
+  border-left: 0;
+  position: absolute;
+  left: auto;
+  right: 100%;
+  top: 17%;
+}
+
+/* (F) ADD A CIRCLE ON THE TIMELINE TO INDICATE AN EVENT */
+div.altEV::after {
+  content: '';
+  background: #fff;
+  border: 4px solid #1da1ff;
+  width: 18px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 109.5%;
+}
+
+div.altEV.right::after {
+  content: '';
+  background: #fff;
+  border: 4px solid #1da1ff;
+  width: 18px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: auto;
+  right: 108%;
+}
+
+.card-img-top {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  display: block;
 }
 
 .card {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.fourth-section {
-  margin-top: 30px;
-  background-color: #F9F9F9;
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0B132B;
+  color: white;
+  text-align: center;
 }
